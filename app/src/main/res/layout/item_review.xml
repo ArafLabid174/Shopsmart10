@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutReviewItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:background="@drawable/bg_review_item"> <!-- Rounded Gray Background -->
+
+    <!-- Top row: Name (left) + Vendor (right) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- Reviewer Name -->
+        <TextView
+            android:id="@+id/tvReviewerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jules Dickerson"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <!-- Vendor with green label -->
+        <TextView
+            android:id="@+id/tvVendorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amazon"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="#00CC00" />
+    </LinearLayout>
+
+    <!-- Ratings row: "Ratings:" + 5 stars + numeric rating -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ratings:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- 5 stars (ImageView icons) -->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_star_border"
+            android:layout_marginEnd="2dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_star_border"
+            android:layout_marginEnd="2dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_star_border"
+            android:layout_marginEnd="2dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_star_border"
+            android:layout_marginEnd="2dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_star_border"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Numeric rating -->
+        <TextView
+            android:id="@+id/tvNumericRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(5.0)"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Review content text -->
+    <TextView
+        android:id="@+id/tvReviewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Really nice feel to hair and looks shiny and healthy"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

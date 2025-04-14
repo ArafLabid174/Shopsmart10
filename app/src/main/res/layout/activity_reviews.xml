@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewReviews"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--
+            RATING BREAKDOWN SECTION
+            (Hard-coded for 5 star, 4 star, 3 star, 2 star, 1 star)
+        -->
+        <!-- 5 Star row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 star"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Progress Bar for 5 stars -->
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:indeterminateOnly="false"
+                android:progress="20"
+                android:max="100"
+                android:progressDrawable="@drawable/rating_progress_drawable"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20%"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- 4 Star row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 star"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"/>
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:indeterminateOnly="false"
+                android:progress="60"
+                android:max="100"
+                android:progressDrawable="@drawable/rating_progress_drawable"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60%"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- 3 Star row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 star"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"/>
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:indeterminateOnly="false"
+                android:progress="7"
+                android:max="100"
+                android:progressDrawable="@drawable/rating_progress_drawable"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7%"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- 2 Star row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 star"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"/>
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:indeterminateOnly="false"
+                android:progress="10"
+                android:max="100"
+                android:progressDrawable="@drawable/rating_progress_drawable"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- 1 Star row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 star"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"/>
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:indeterminateOnly="false"
+                android:progress="3"
+                android:max="100"
+                android:progressDrawable="@drawable/rating_progress_drawable"
+                style="?android:attr/progressBarStyleHorizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3%"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Dynamic Reviews Summary (you can set this text in code) -->
+        <TextView
+            android:id="@+id/tvReviewsSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- GIVE A REVIEW SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give a review"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Star selection row (hard-coded star icons) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_star_border"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_star_border"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_star_border"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_star_border"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_star_border"/>
+        </LinearLayout>
+
+        <!-- Review comment box -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Write your review here..."
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="16dp"
+            android:gravity="top"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="14sp"/>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btnSubmitReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="start"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>

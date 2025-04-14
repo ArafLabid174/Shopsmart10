@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "name": "Maui Moisture ",
+    "code": "sdsdsdsd",
+    "product": {
+      "image": "https://m.media-amazon.com/images/I/71TXUkQhg0L._SL1500_.jpg",
+      "price": {
+        "original": "$13.50",
+        "discounted": "$12.00",
+        "savings": "$1.50",
+        "details_url": "https://example.com/price-details"
+      },
+      "sections": {
+        "features": [
+          "Thickens & restores weak, brittle hair",
+          "Blended with Bamboo Fibers, Castor Oil & Neem Oil",
+          "Revives your hair - returning it to a healthy-looking glow"
+        ],
+        "product_specification": {
+          "volume": "385ml",
+          "suitable_for": "Weak, brittle hair",
+          "key_ingredients": ["Bamboo Fiber", "Castor Oil", "Neem Oil"],
+          "free_from": ["Sulfates", "Silicones", "Parabens"]
+        },
+        "tips_and_advice": "Use regularly for best results. Apply to wet hair, lather and rinse thoroughly.",
+        "warranty_policy": "No warranty applicable for cosmetic products. Please refer to return policy for more information."
+      },
+      "reviews": {
+        "rating": 4.5,
+        "total_reviews": 100,
+        "distribution": {
+          "5_star": 70,
+          "4_star": 20,
+          "3_star": 7,
+          "2_star": 1,
+          "1_star": 3
+        },
+        "summary": "4.5 out of 5"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "OGX Coconut",
+    "code": "abc123",
+    "product": {
+      "image": "https://m.media-amazon.com/images/I/71bP7lKf42L._SL1500_.jpg",
+      "price": {
+        "original": "$14.00",
+        "discounted": "$11.20",
+        "savings": "$2.80",
+        "details_url": "https://example.com/ogx-coconut"
+      },
+      "sections": {
+        "features": [
+          "Hydrates and nourishes hair",
+          "Infused with coconut milk, egg white proteins, and coconut oils",
+          "Leaves hair soft, silky, and smooth"
+        ],
+        "product_specification": {
+          "volume": "385ml",
+          "suitable_for": "Dry hair",
+          "key_ingredients": ["Coconut Milk", "Egg Proteins", "Coconut Oil"],
+          "free_from": ["Sulfates"]
+        },
+        "tips_and_advice": "Lather, rinse, and repeat if needed. Follow with matching conditioner.",
+        "warranty_policy": "30-day return policy if unopened."
+      },
+      "reviews": {
+        "rating": 4.3,
+        "total_reviews": 85,
+        "distribution": {
+          "5_star": 60,
+          "4_star": 15,
+          "3_star": 7,
+          "2_star": 2,
+          "1_star": 1
+        },
+        "summary": "4.3 out of 5"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "Herbal Essences",
+    "code": "herb567",
+    "product": {
+      "image": "https://m.media-amazon.com/images/I/71TXUkQhg0L._SL1500_.jpg",
+      "price": {
+        "original": "$10.99",
+        "discounted": "$9.49",
+        "savings": "$1.50",
+        "details_url": "https://example.com/herbal-essences"
+      },
+      "sections": {
+        "features": [
+          "Repairs damaged hair",
+          "Color-safe and pH-balanced",
+          "Crafted with bio:renew antioxidant fusion"
+        ],
+        "product_specification": {
+          "volume": "400ml",
+          "suitable_for": "Damaged hair",
+          "key_ingredients": ["Argan Oil", "Aloe", "Sea Kelp"],
+          "free_from": ["Parabens", "Colorants", "Gluten"]
+        },
+        "tips_and_advice": "Massage into wet hair and work into a rich lather. Rinse thoroughly.",
+        "warranty_policy": "Standard return policy applies."
+      },
+      "reviews": {
+        "rating": 4.6,
+        "total_reviews": 120,
+        "distribution": {
+          "5_star": 80,
+          "4_star": 25,
+          "3_star": 10,
+          "2_star": 3,
+          "1_star": 2
+        },
+        "summary": "4.6 out of 5"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Pantene Pro-V Repair",
+    "code": "pant999",
+    "product": {
+      "image": "https://m.media-amazon.com/images/I/71TXUkQhg0L._SL1500_.jpg",
+      "price": {
+        "original": "$11.25",
+        "discounted": "$10.00",
+        "savings": "$1.25",
+        "details_url": "https://example.com/pantene"
+      },
+      "sections": {
+        "features": [
+          "Strengthens against damage",
+          "Powerful Pro-V formula",
+          "Gives shine and smoothness"
+        ],
+        "product_specification": {
+          "volume": "375ml",
+          "suitable_for": "All hair types",
+          "key_ingredients": ["Pro-V Nutrients"],
+          "free_from": ["Dyes"]
+        },
+        "tips_and_advice": "Use with Repair & Protect Conditioner for best results.",
+        "warranty_policy": "Money-back guarantee within 14 days of purchase."
+      },
+      "reviews": {
+        "rating": 4.4,
+        "total_reviews": 95,
+        "distribution": {
+          "5_star": 65,
+          "4_star": 18,
+          "3_star": 7,
+          "2_star": 3,
+          "1_star": 2
+        },
+        "summary": "4.4 out of 5"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "L'Oréal Paris ",
+    "code": "loreal888",
+    "product": {
+      "image": "https://m.media-amazon.com/images/I/71TXUkQhg0L._SL1500_.jpg",
+      "price": {
+        "original": "$9.99",
+        "discounted": "$8.79",
+        "savings": "$1.20",
+        "details_url": "https://example.com/loreal-elvive"
+      },
+      "sections": {
+        "features": [
+          "Strengthens long hair",
+          "Reduces breakage from brushing",
+          "With keratin and castor oil"
+        ],
+        "product_specification": {
+          "volume": "400ml",
+          "suitable_for": "Long, damaged hair",
+          "key_ingredients": ["Keratin", "Castor Oil", "Vitamins"],
+          "free_from": ["Sulfates"]
+        },
+        "tips_and_advice": "Apply to wet hair, lather and rinse. Use with Dream Lengths Conditioner.",
+        "warranty_policy": "Contact support within 30 days for concerns."
+      },
+      "reviews": {
+        "rating": 4.2,
+        "total_reviews": 88,
+        "distribution": {
+          "5_star": 50,
+          "4_star": 25,
+          "3_star": 8,
+          "2_star": 3,
+          "1_star": 2
+        },
+        "summary": "4.2 out of 5"
+      }
+    }
+  }
+]
