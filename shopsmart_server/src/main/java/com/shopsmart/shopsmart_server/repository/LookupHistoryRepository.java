@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.shopsmart.shopsmart_server.repository;
 
 import java.util.List;
@@ -11,4 +12,19 @@ import com.shopsmart.shopsmart_server.model.LookupHistory;
 public interface LookupHistoryRepository extends MongoRepository<LookupHistory, String> {
     List<LookupHistory> findByUserId(String userId);
     void deleteByUserIdAndUpcCode(String userId, String upcCode);
+=======
+package com.shopsmart.shopsmart_server.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import com.shopsmart.shopsmart_server.model.LookupHistory;
+
+@Repository
+public interface LookupHistoryRepository extends MongoRepository<LookupHistory, String> {
+    List<LookupHistory> findByUserId(String userId);
+    void deleteByUserIdAndUpcCode(String userId, String upcCode);
+>>>>>>> f05afc47162a15a3034e3b01c500459bdef193e5
 }

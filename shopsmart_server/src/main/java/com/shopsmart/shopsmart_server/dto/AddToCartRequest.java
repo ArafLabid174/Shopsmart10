@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.shopsmart.shopsmart_server.dto;
 
 public class AddToCartRequest {
@@ -81,4 +82,48 @@ public class AddToCartRequest {
     public void setImageLink(String imageLink) {
         this.imageLink = imageLink;
     }
+=======
+package com.shopsmart.shopsmart_server.dto;
+
+public class AddToCartRequest {
+    private Long productId;
+    private String productName;
+    private String productLink;
+    
+    // Default constructor
+    public AddToCartRequest() {
+    }
+    
+    // Constructor with fields
+    public AddToCartRequest(Long productId, String productName, String productLink) {
+        this.productId = productId;
+        this.productName = productName;
+        this.productLink = productLink;
+    }
+    
+    // Getters and Setters
+    public Long getProductId() {
+        return productId;
+    }
+    
+    public void setProductId(Long productId) {
+        this.productId = productId;
+    }
+    
+    public String getProductName() {
+        return productName;
+    }
+    
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+    
+    public String getProductLink() {
+        return productLink;
+    }
+    
+    public void setProductLink(String productLink) {
+        this.productLink = productLink;
+    }
+>>>>>>> f05afc47162a15a3034e3b01c500459bdef193e5
 }
