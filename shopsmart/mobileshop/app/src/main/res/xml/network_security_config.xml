@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Base configuration allowing cleartext traffic -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>    <!-- Specific domain configuration -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.201.43.84</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">api.shopsmart.com</domain>
+    </domain-config>
+</network-security-config>

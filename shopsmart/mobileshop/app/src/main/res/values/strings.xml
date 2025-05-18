@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">mobileshop</string>
+    <string name="product_icon_desc">Product Icon</string>
+    <string name="delete">Delete</string>
+    <string name="product_image_desc">Product Image Descriptining</string>
+    <string name="profile_picture_desc">Profile Picture Description</string>
+    <string name="edit_email_desc">Edit Email Description</string>
+    <string name="edit_password_desc">Edit Password Description</string>
+    <string name="edit_full_name_desc">Edit Full Name</string>
+    <string name="edit_new_password_desc">Edit New Password</string>
+    <string name="wish">Wish</string>
+
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_search_hint">Search for a setting...</string>
+
+    <!-- List Items -->
+    <string name="account">Account</string>
+    <string name="notifications">Notifications</string>
+    <string name="appearance">Appearance</string>
+    <string name="privacy_security">Privacy &amp; Security</string>
+    <string name="help_support">Help and Support</string>
+    <string name="about">About</string>
+
+    <!-- Content Descriptions for Icons -->
+    <string name="account_icon_desc">Account Icon</string>
+    <string name="notifications_icon_desc">Notifications Icon</string>
+    <string name="appearance_icon_desc">Appearance Icon</string>
+    <string name="privacy_security_icon_desc">Privacy &amp; Security Icon</string>
+    <string name="help_support_icon_desc">Help and Support Icon</string>
+    <string name="about_icon_desc">About Icon</string>
+</resources>

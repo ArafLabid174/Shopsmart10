@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewProductDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#F4F4F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:animateLayoutChanges="true">
+
+    <!-- Product Image with elevation and rounded corners -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_corners">
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/product_image_desc" />
+            
+        <!-- Category Badge -->
+        <TextView
+            android:id="@+id/tvCategoryBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="12dp"
+            android:background="@drawable/category_badge_background"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:text="Category"
+            android:maxLines="1"
+            android:ellipsize="end" />
+    </FrameLayout>
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/tvDetailsProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Product Code -->
+    <TextView
+        android:id="@+id/tvDetailsProductCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Code:"
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Brand, Model, Color -->
+    <LinearLayout
+        android:id="@+id/llProductAttributes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
+        
+        <TextView
+            android:id="@+id/tvProductBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand: "
+            android:textColor="#424242"
+            android:textSize="16sp"/>
+            
+        <TextView
+            android:id="@+id/tvProductColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color: "
+            android:textColor="#424242"
+            android:textSize="16sp"/>
+            
+        <TextView
+            android:id="@+id/tvProductWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight: "
+            android:textColor="#424242"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/tvDetailsProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textColor="#D32F2F"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Features Section Header -->
+    <TextView
+        android:id="@+id/tvFeaturesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Features List (populated dynamically) -->
+    <TextView
+        android:id="@+id/tvFeaturesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Tips and Advice Section Header -->
+    <TextView
+        android:id="@+id/tvTipsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tips and Advice"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Tips and Advice Content (populated dynamically) -->
+    <TextView
+        android:id="@+id/tvTipsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Reviews Section Header -->
+    <TextView
+        android:id="@+id/tvReviewsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Reviews Summary (populated dynamically) -->
+    <TextView
+        android:id="@+id/tvReviewsSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <include layout="@layout/activity_reviews" />
+
+
+        <!-- Compare Button -->
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compare"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>
+    </ScrollView>

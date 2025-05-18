@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- "Scan Now" button -->
+    <Button
+        android:id="@+id/btnScanNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Now" />
+
+    <!-- Title "Search History" below the button -->
+    <TextView
+        android:id="@+id/tvSearchHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search History"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        android:layout_marginTop="16dp" />
+
+    <!-- Message when no products are available -->
+    <TextView
+        android:id="@+id/tvNoProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No product available"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView to display the scanned product list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvScannedProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
